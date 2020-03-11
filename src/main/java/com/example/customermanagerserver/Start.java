@@ -37,6 +37,6 @@ public class Start {
         Contract contract2 = new Contract(2L, customer2.getName(), customer2.getId(), 2300.0, LocalDate.of(2019, 12, 23));
         Contract contract3 = new Contract(2L, customer3.getName(), customer3.getId(), 2367.90, LocalDate.of(2019, 11, 25));
 
-        contractRepo.getContracts().addAll(Lists.newArrayList(contract1, contract2, contract3));
+        contractRepo.setContracts(Lists.newArrayList(contract1, contract2, contract3));
     }
 }
